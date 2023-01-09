@@ -1,5 +1,5 @@
 def read_layout(file):
-    file = open(f"./{file}", "r")
+    file = open("file", "r")
 
     row = 0
     layout = [[]]

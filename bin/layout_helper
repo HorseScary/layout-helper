@@ -2,6 +2,7 @@
 
 import argparse
 import layout_helper
+import os
 
 parser = argparse.ArgumentParser(
     prog="layout_helper",
@@ -14,5 +15,5 @@ parser.add_argument(
 
 args = parser.parse_args()
 
-print(layout_helper.format_layout(
-    layout_helper.read_layout(f"./{args.layer}.txt")))
+print(layout_helper.format_layout(layout_helper.read_layout(
+    f"{os.environ['HOME']}/.config/Layout_Helper/{args.layer}.txt")))
